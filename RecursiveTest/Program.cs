@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 namespace RecursiveTest {
 	class Program {
 		static void Main(string[] args) {
-			
-
-			Recuresive(10,);
+			 
 		}
 		public int Recuresive(int i,out int result) {
 			 result = 0;
