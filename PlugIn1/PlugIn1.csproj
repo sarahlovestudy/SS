@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="PlugInInterfaceTest">
+      <HintPath>..\PlugInInterfaceTest\bin\Debug\netstandard2.0\PlugInInterfaceTest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

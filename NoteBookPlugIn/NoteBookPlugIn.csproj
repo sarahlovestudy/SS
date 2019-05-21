@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="plugIn">
+      <HintPath>..\NoteBook\bin\Debug\plugs\plugIn.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

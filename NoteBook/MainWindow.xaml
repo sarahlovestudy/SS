@@ -1,0 +1,26 @@
+﻿<Window x:Class="NoteBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NoteBook"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" 
+        Loaded="Window_Loaded">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New"></MenuItem>
+                <MenuItem Header="Open"></MenuItem>
+                <MenuItem Header="Add"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Cut"></MenuItem>
+                <MenuItem Header="Copy"></MenuItem>
+                <MenuItem Header="Paste"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Extend" Name="PlugInMenuItem" Click="PlugInMenuItem_Click"></MenuItem>
+        </Menu>
+        <TextBox DockPanel.Dock="Bottom" Name="txt"></TextBox>
+    </DockPanel>
+</Window>
