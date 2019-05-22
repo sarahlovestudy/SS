@@ -1,0 +1,29 @@
+﻿<Window x:Class="PageTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PageTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+   
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+            <WrapPanel  Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Name="Home" Tag="Home" Height="30" Width="60" Margin="5" Click="btnA_Click">首页</Button>
+            <Button Name="SimpleChat" Tag="Page1" Height="30" Width="60" Click="btnA_Click">内容</Button>
+            <Button Name="GoBack" Tag="Home" Height="30" Width="60" Margin="5" Click="btnB_Click">GoBack</Button>
+        </WrapPanel>
+        <Grid Grid.Row="1" Grid.ColumnSpan="3">
+            <Frame Name="frmMain" NavigationUIVisibility="Hidden" ></Frame>
+        </Grid>           
+        </Grid>   
+</Window>

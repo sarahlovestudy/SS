@@ -1,0 +1,28 @@
+﻿<base:BasePage x:Class="PageTest.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PageTest"
+      xmlns:base="clr-namespace:PageTest"         
+      mc:Ignorable="d" 
+      
+      Title="Home">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBox Name="txtParam" Width="120" Height="30"></TextBox>
+            <Button Name="btnCall" Width="90" Height="30" Margin="5" Click="btnCall_Click">CallApiByGet</Button>
+        </WrapPanel>
+        <Grid Grid.Row="1">
+        </Grid>        
+    </Grid>
+</base:BasePage>
